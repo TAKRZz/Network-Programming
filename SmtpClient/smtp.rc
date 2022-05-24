@@ -1,0 +1,237 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\smtp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\smtp.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 smtp"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "smtp 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2005",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SMTP_DIALOG DIALOGEX 0, 0, 509, 231
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "电子邮件发送客户端程序"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "发送",IDOK,218,210,50,14
+    PUSHBUTTON      "取消",IDCANCEL,364,210,50,14
+    LTEXT           "发信人",IDC_STATIC,7,7,31,11,SS_CENTERIMAGE
+    LTEXT           "发信地址",IDC_STATIC,7,39,35,12
+    LTEXT           "SMTP服务器",IDC_STATIC,7,84,41,10,SS_CENTERIMAGE
+    LTEXT           "端口",IDC_STATIC,7,114,19,10,SS_CENTERIMAGE
+    LTEXT           "用户名",IDC_STATIC,7,154,26,10,SS_CENTERIMAGE
+    LTEXT           "口令",IDC_STATIC,7,184,19,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_NAME,7,21,129,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ADDR,7,53,129,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SERVER,7,96,128,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PORT,7,127,127,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_USER,7,167,128,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASS,7,197,127,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LETTER,196,85,306,42,ES_AUTOHSCROLL
+    LTEXT           "收信",IDC_STATIC,190,7,18,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_RECEIVER,214,7,108,12,ES_AUTOHSCROLL
+    LTEXT           "抄送",IDC_STATIC,189,26,17,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_CC,214,24,288,12,ES_AUTOHSCROLL
+    LTEXT           "暗送",IDC_STATIC,189,41,17,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_BCC,214,40,288,12,ES_AUTOHSCROLL
+    LTEXT           "主题",IDC_STATIC,328,7,25,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_TITLE,355,7,147,12,ES_AUTOHSCROLL
+    LTEXT           "附件",IDC_STATIC,189,57,16,9,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_ATTACH,213,56,233,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_BTN_VIEW,451,58,45,18
+    LTEXT           "信件内容",IDC_STATIC,187,71,34,12,SS_CENTERIMAGE
+    CONTROL         "",IDC_RICH_LIST,"RICHEDIT",TCS_OWNERDRAWFIXED | TCS_MULTISELECT | WS_BORDER | WS_VSCROLL | WS_TABSTOP,196,142,306,63
+    LTEXT           "smtp 会话的状态信息",IDC_STATIC,192,132,80,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "smtp Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "smtp"
+            VALUE "LegalCopyright", "版权所有 (C) 2005"
+            VALUE "OriginalFilename", "smtp.EXE"
+            VALUE "ProductName", "smtp 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SMTP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 502
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_SMTP_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 smtp(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\smtp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
